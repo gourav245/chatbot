@@ -16,6 +16,12 @@ def reply_engine(sentence,train):
     elif k == 'neg':
         return random.choice(NEGATIVE_RESPONSE)
 
+def learn_yourself(sentence):
+	if sentence == 'that\'s not it':
+		inpt=input('then what do i say, btw i am embarrassed!!')
+		a=input('is it a positive sentence or negative
+		train.append((inpt,a))
+
 
 train = [
      ('I love this sandwich.', 'pos'), ('this is an amazing place!', 'pos'),
